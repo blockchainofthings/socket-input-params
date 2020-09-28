@@ -158,7 +158,7 @@ for param in "${extParams[@]}"; do
 done
 
 # Send external parameters to running application (through open Unix domain socket)
-echo "$extParamsList" | nc -U ./inputparams
+echo -n "$extParamsList" | nc -U ./inputparams
 ```
 
 > **Note**: it is assumed that the environment variable $APP_DIR contains the path of the directory where the Unix
