@@ -166,6 +166,6 @@ echo -n "$extParamsList" | nc -U ./inputparams
 
 ## License
 
-This JavaScript library is released under the [MIT License](LICENSE). Feel free to fork, and modify!
+This Node.js module is released under the [MIT License](LICENSE). Feel free to fork, and modify!
 
 Copyright © 2020, Blockchain of Things Inc.
