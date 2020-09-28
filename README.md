@@ -31,10 +31,10 @@ const SocketInputParams = require('socket-input-params');
 
 const sockInParams = new SocketInputParams({
     readTimeout: 30000,
-    optionDefs: {
+    optionDefs: [{
         name: 'password',
         alias: 'p'
-    }
+    }]
 });
 ```
 
@@ -46,8 +46,9 @@ The following options can be used when instantiating the socket input parameters
 - **socketName** \[String\] - (optional, default: <b>*'inputparams'*</b>) Name of the Unix domain socket to be created.
 - **readTimeout** \[Number\] - (optional, default: <b>*60000*</b>) Timeout, in milliseconds, for reading data from the
  Unix domain socket.
-- **optionDefs** \[Object\] - Object defining the command line options to be expected as input parameters as defined by
- the ['command-line-args'](https://github.com/75lb/command-line-args) Node.js module.
+- **optionDefs** \[Array | Object\] - List of objects defining the command line options to be expected as input
+ parameters as defined by the ['command-line-args'](https://github.com/75lb/command-line-args) Node.js module. When
+ defining a single option, an object can be passed instead of an array.
 
 ### Retrieve command line options
 

@@ -21,8 +21,8 @@ class SocketInputParams {
      *                                    name 'inputparams' is used.
      * @param {Number} [opts.readTimeout] Timeout, in milliseconds, for reading data from Unix domain socket.
      *                                     If no timeout is passed, a default 60 seconds timeout is used.
-     * @param {Object} opts.optionDefs Object defining the options to be expected as input parameters as defined
-     *                                  by the 'command-line-args' Node.js module.
+     * @param {Array|Object} opts.optionDefs List of objects defining the options to be expected as input parameters
+     *                                        as defined by the 'command-line-args' Node.js module.
      */
     constructor(opts) {
         if (typeof opts !== 'object' || opts === null) {
