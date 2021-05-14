@@ -1,6 +1,6 @@
 {
   "name": "socket-input-params",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Node.js module used to receive input parameters via a Unix domain socket.",
   "main": "index.js",
   "scripts": {
